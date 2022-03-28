@@ -1,0 +1,20 @@
+{
+  "name": "popup",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite build --watch --emptyOutDir",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "antd": "^4.19.4",
+    "fuse.js": "^6.5.3",
+    "preact": "^10.5.15"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.1.5",
+    "sass": "^1.49.9",
+    "vite": "^2.8.0"
+  }
+}

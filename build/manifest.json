@@ -1,0 +1,33 @@
+{
+  "name": "Russians Blacklist Extension",
+  "description": "Highlight companies and people that support russion invasion of Ukraine",
+  "version": "0.1",
+  "manifest_version": 3,
+  "options_page": "./options/index.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content-scripts/page.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "/popup/index.html",
+    "default_icon": {
+      "32": "ukraine.png"
+    }
+  }
+}
